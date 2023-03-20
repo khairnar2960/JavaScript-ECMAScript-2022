@@ -1,0 +1,98 @@
+Data Types
+	string => hello
+	int => -123 0 123
+	float => 10.5, 9.81
+	boolean => true/false 
+	object => array object function class class-object
+	null
+	undefined
+	
+Operator
+Arithmatic
++ addition
+- substraction
+* multiplication
+/ devide
+
+asignment
+= asign value
++= concatinate addition assignment
+-= 
+
+logical
+&& true 
+||
+!
+
+euality
+==
+===
+
+conditional
+<
+>
+>=
+<=
+!=
+
+variable
+var, let, const
+
+const MINIMUM_AGE = 18
+
+age >= MINIMUM_AGE
+
+Array
+let books = ['Rich dad poor dad', 'Ramayan'] // index
+
+books
+(2) ['Rich dad poor dad', 'Ramayan']0: "Rich dad poor dad"1: "Ramayan"length: 2[[Prototype]]: Array(0)
+
+books = ['Rich dad poor dad', 'Ramayan']
+(2) ['Rich dad poor dad', 'Ramayan']0: "Rich dad poor dad"1: "Ramayan"length: 2[[Prototype]]: Array(0)
+
+
+books.push('Mahabharat')
+3
+
+books
+(3) ['Rich dad poor dad', 'Ramayan', 'Mahabharat']0: "Rich dad poor dad"1: "Ramayan"2: "Mahabharat"length: 3[[Prototype]]: Array(0)
+
+books.pop()
+'Mahabharat'
+
+books
+(2) ['Rich dad poor dad', 'Ramayan']0: "Rich dad poor dad"1: "Ramayan"length: 2[[Prototype]]: Array(0)
+
+books[0]
+'Rich dad poor dad'
+
+books[1]
+'Ramayan'
+
+books[2]
+undefined
+
+delete books[0]
+true
+
+books
+(2) [empty, 'Ramayan']1: "Ramayan"length: 2[[Prototype]]: Array(0)
+
+books.join()
+
+books.join('-')
+
+'Rich dad poor dad'.split()
+
+'/  hello  /'.trim(/\\/)
+'/  hello  /'
+'/  hello  /'.trim()
+'/  hello  /'
+'/  hello  /'.replace('/', '')
+'  hello  /'
+'/  hello  /'.replaceAll('/', '')
+'  hello  '
+'/  hello  /'.replaceAll('/', '').trim()
+'hello'
+
