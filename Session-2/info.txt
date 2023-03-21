@@ -1,0 +1,30 @@
+# Object:
+
+find method on array
+
+Loop
+for, forEach, while
+# for loop
+for(val, limit, increment) {
+	// 
+}
+
+speard operator
+
+/*
+# Naming Convention for variables & functions
+not strats with -, number
+not include symbols // _ $
+not include spaces
+*/
+
+# Conditional Statements
+if, else if , else
+
+if (condition) {
+	//
+} else if (condition2) {
+	//
+} else {
+	//
+}

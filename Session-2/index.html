@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Session 2</title>
+	</head>
+<body>
+
+<script>
+/*
+let rawString = "the namae of the movie is interstalor";
+
+console.log(rawString.length);
+let words = rawString.split(' ');
+console.log(words.length);
+console.log(words);
+console.log(words[0].length);
+console.log(words.join('-'))
+console.log(rawString[0])
+*/
+let arr = [
+	10, 20, 5, 2, 3, 40, 89, 45
+];
+// console.log(arr);
+const obj1 = {
+	'name': 'Vaishali',
+	'mobile': 9876543210,
+	'dob': '1 Jan 1995',
+	'arr': arr
+};
+/*
+let oldName = obj1.name;
+console.log(obj1);
+obj1.name = 'Rohit';
+console.log(obj1.name);
+console.log(obj1.age);
+console.log(oldName);
+*/
+
+// Function Defination
+function sum(n1, n2, n3) { // parameters
+	return n1 + n2 + n3
+}
+// Function Call
+let firstSum = sum(5,10,20); // arguments
+const obj2 = {firstSum, obj1, arr};
+console.log(obj2);
+
+function sumArr(arr) {
+	let sum = 0; // local scope
+	/*
+	for(let i=0; i < arr.length; i++) {
+		sum += arr[i];
+	}
+	*/
+	
+	/*
+	arr.forEach(function(value){
+		sum += value;
+	});
+	*/
+	let i = 0;
+	while(i < arr.length) {
+		/*
+		// conditional statement for sum first 4 items
+		if (i < 4) {
+			sum += arr[i];
+		} else {
+			break;
+		}
+		*/
+		
+		// sum if value is less than 50
+		/*
+		// method 1
+		if (arr[i] < 50) {
+			sum += arr[i];
+			i++;
+		} else {
+			i++;
+			continue;
+		}
+		*/
+		/*
+		// method 2
+		if (arr[i] < 50) {
+			sum += arr[i];
+		}
+		i++;
+		*/
+		
+		//sum if value is less than 50 and not equal to 20
+		if ((arr[i] !== 20) && (arr[i] < 50)) {
+			sum += arr[i];
+		}
+		i++;
+	}
+	return sum;
+}
+console.log(sumArr(arr));
+</script>
+</body>
+</html>
