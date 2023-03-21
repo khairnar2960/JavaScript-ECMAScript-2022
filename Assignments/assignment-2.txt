@@ -1,0 +1,32 @@
+# Q1
+Write a program to reverse the string "The five boxing wizards jump quickly"
+
+Then, the output should be
+'ylkciuq pmuj sdraziw gnixob evif ehT'
+
+# Q2
+Write a program to reverse the words of this string "quick brown fox jumps over the lazy dog"
+
+Then, the output should be
+'dog lazy the over jumps fox brown quick'
+
+# Q3
+Write a program that accepts a comma separated sequence of words as value and prints the words in a comma-separated sequence after sorting them alphabetically.
+Suppose the following value is supplied to the program:
+without,dog,hello,bag,cat,world,apple
+
+Then, the output should be:
+apple,bag,cat,dog,hello,without,world
+
+# Q4
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+# Q5
+Write a program which can compute the factorial of a given numbers.
+The results should be printed in a comma-separated sequence on a single line.
+Suppose the following value is supplied to the program:
+8
+
+Then, the output should be:
+40320

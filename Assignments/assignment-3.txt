@@ -1,0 +1,31 @@
+# Q1
+Write a program that accepts sequence of lines as value and prints the lines after making all characters in the sentence capitalized.
+Suppose the following value is supplied to the program:
+Hello world
+Practice makes perfect
+
+Then, the output should be:
+HELLO WORLD
+PRACTICE MAKES PERFECT
+
+# Q2
+Write a program that accepts a sequence of whitespace separated words as value and prints the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following value is supplied to the program:
+hello world and practice makes perfect and hello world again
+
+Then, the output should be:
+again and hello makes perfect practice world
+
+# Q3
+Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+Then, the output should like:
+2000,2002,2004,2006,2008,2020,....and so on
+
+# Q4
+Write a program to find the square root of this formula
+(a^3) + 5
+here (a^3) is (a to the power 3)
+
+if value of a is set to 5 then, output should be 11.40175425099138
