@@ -28,3 +28,87 @@ if (condition) {
 } else {
 	//
 }
+
+a = 1, b= '1'
+
+if (a==b) {
+	console.log('a = b');
+}
+
+if (a===b) {
+	console.log('a = b');
+}
+undefined
+if (a===b) {
+	console.log('a = b');
+} else {
+	console.log('a != b');
+}
+
+
+if (a===b) {
+	console.log('a = b');
+} else if (a===1) {
+	console.log('a = 1');
+} else {
+	console.log('a != b');
+}
+
+for (let i=0; i<3; i++) {
+	console.log(arr[i]);
+}
+
+for (let i=0; i<arr.len; i++) {
+	console.log(arr[i]);
+}
+
+for (let i=0; i<arr.length; i++) {
+	console.log(arr[i]);
+}
+
+arr.push('four')
+
+for (let i=0; i<arr.length; i++) {
+	console.log(arr[i]);
+}
+
+
+for (let i = arr.length; i >= 0; i--) {
+	console.log(arr[i]);
+}
+
+let i = 0;
+while (i < arr.length) {
+	console.log(arr[i]);
+	i++;
+}
+
+function myfunction() {
+	// logic
+	let c = 12; // local
+	console.log(c);
+}
+
+myfunction()
+
+va = myfunction()
+
+function myfunction() {
+	// logic
+	let c = 12; // local
+	return c;
+}
+
+va = myfunction()
+
+function printName(fname, lname) {
+	return fname + ' ' + lname;
+}
+
+printName('tanaya', 'pawar')
+
+function printName(fname, lname) {
+	return;
+	fname + ' ' + lname
+}
+printName('tanaya', 'pawar')
