@@ -1,0 +1,18 @@
+.dropdown {
+	max-width: 150px;
+	position: relative;
+}
+.btn {
+	width: 100%;
+}
+.dropdown-menu {
+	display: none;
+	width: 100%;
+	position: absolute;
+	background: lightblue;
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+.dropdown-item {
+	padding: 0.25em 0px;
+}
