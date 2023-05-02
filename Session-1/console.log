@@ -1,0 +1,155 @@
+MINIMUM_AGE
+window
+name
+name.replace('Pooja', 'Ankita')
+name.replace('o', 'a')
+name.replaceAll('o', 'a')
+name.split()
+name.split(' ')
+name.split('')
+'9876543210'.split('')
+name.slice(0,5)
+name.startsWith('P')
+name.endsWith('a')
+name.endsWith('b')
+'9876543210'.split('')
+'9876543210'.split('').reverse()
+'9876543210'.split('').reverse().join('')
+'9876543210'.split('').reverse().join('-')
+let str = 'quick brown fox jumps over the lazy dog';
+str.search('quick')
+str.search('ruick')
+str.search(/^quick/)
+str.search(/^quick$/)
+str.search(/^quick+dog$/)
+name.search(/^Po+a$/)
+name.search(/^Po+/)
+name.search(/[x]/)
+name.search(/[^x]/)
+name.search(/[^o]/)
+name.search(/[^i]/)
+'9876543210'.search(/\d/)
+'9876543210'.search(/\s/)
+'9876 543210'.search(/\s/)
+str = `qu ick
+brown
+fox
+jumps
+over
+the
+lazy
+	dog`
+'9876 543210'.search(/\S/)
+'9876 543210'.search(/\w/)
+'9876543210'.search(/\w/)
+num = 9876543210
+typeof num
+typeof name
+Number('9876543210')
+Number('9876543.210')
+arr = [
+	'quick',
+	'brown',
+	'fox',
+	'jumps',
+	'over',
+	'the',
+	'lazy',
+	'dog',
+]
+arr.reverse()
+arr.find('dog')
+arr.find(function(el){
+	return el=='doggy'
+})
+arr.find(function(el) return el=='doggy')
+arr.find(function(el) el=='doggy')
+arr.find((el) => el=='doggy')
+arr.find(el => el=='doggy')
+arr.find(el => el=='dog')
+arr.length
+arr
+arr.pop(0
+arr.pop()
+arr
+arr.pop(2)
+arr
+arr.findIndex('dog')
+arr.findIndex(e => e=='dog')
+arr.findIndex(e => e=='the')
+arr.findLast()
+arr.findLast(e => e=='jumps')
+arr
+delete arr[2]
+arr
+arr = arr.values()
+arr
+for (let name of arr) {
+	console.log(name)
+}
+arr = ['dog', 'lazy', 'the', 'over', 'jumps', 'fox', 'brown']
+delete arr[2]
+arr
+arr.filter(e=>e)
+arr.filter(e=> e.incluses('o'))
+arr.filter(e=> e.include('o'))
+arr.filter(e=> e.includes('o'))
+arr.sort()
+b = [2,2,4,65,8,0,12,45,100,6,3]
+b.sort()
+b.sort((f,s) => f-s)
+b.sort((f,s) => s-f)
+arr.sort((a,b) => a-b)
+arr.sort((a,b) => b-a)
+b
+b.map(e => e+2)
+function funname(par1, par2) {}
+function funname(par1, par2) {
+	return {par1, par2}
+}
+funname()
+sum(1,2)
+student('pooja', 21)
+student('pooja',18)
+sum(1,2,3)
+[1, 2, 3].reduce((f, s) => f + s)
+[1, 2, 3].reduce((f, s) => f * s)
+[1, 2, 3].reduce((f, s) => f / s)
+1/2/3
+sum(1,2,3)
+sum(1,2,3,45,50,1000)
+student('pooja', 21)
+obj
+document
+window
+21>18
+17>18
+student
+student.isAdult()
+student.age
+student.age = 17
+student.isAdult()
+student
+student.showInPage()
+this
+student.name = 'sameer'
+student
+student.name
+admissions
+admissions.sameer = student
+admissions
+student
+window
+Student()
+new Student()
+new Student('sammer', 21, 9876543210)
+admissions.sameer = new Student('sammer', 21, 9876543210)
+admissions.kunal = new Student('kunam', 24, 9876543210)
+admissions
+admissions.kunal
+admissions.kunal.age
+admissions.kunal.age = 25
+admissions.kunal.showInPage()
+admissions.sameer.showInPage()
+new Student('sammer', 21, 9876543210)
+(new Student('sammer', 21, 9876543210)).showInPage()

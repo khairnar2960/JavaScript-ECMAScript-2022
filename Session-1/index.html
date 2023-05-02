@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>JS tutorial</title>
+	<div>
+	<div id="name"></div>
+	<div id="age"></div>
+	</div>
 	<style>
 	/* css */
 	</style>
@@ -10,9 +14,14 @@
 
 
 <script>
-let name = "Pooja"
+'use strict';
 
-name = 'Rohit'
+let name = "Pooja Mehra"
+console.log(name.includes('Pooja'));
+console.log(name);
+
+// name = 'Rohit'
+
 
 const MINIMUM_AGE = 18
 let salary = 10000.501
@@ -20,7 +29,69 @@ let hasbike = true
 
 /* hasbike = false */
 // hasbike = null
+console.log(sum(10, 20));
+// default arguments
+/*
+function student(name, age=20) {
+	return {name, age: sum(age, 20)};
+}
+*/
+// arbitory args
 
+function sum(...n) {
+	return n.reduce((f, s) => f + s)
+}
+
+/*
+const sum = function(...n) {
+	return n.reduce((f, s) => f + s)
+}
+*/
+//arrow function
+/*
+const sum = (...n) => {
+	return n.reduce((f, s) => f + s)
+}
+*/
+// camelCase
+// PascalCase
+// Snake
+/*
+const student = {
+	domName: document.querySelector('#name'),
+	domAge: document.querySelector('#age'),
+	'name': 'Samira',
+	"age": 21,
+	mobile: 9876543210,
+	isAdult: function() {
+		return this.age > 18;
+	},
+	showInPage: function() {
+		console.log(this);
+		this.domName.innerText = this.name;
+		this.domAge.innerText = this.age;
+	}
+};
+*/
+const admissions = {
+}
+function Student(name, age, mobile) {
+	const domName = document.querySelector('#name');
+	const domAge = document.querySelector('#age');
+	this.name = name;
+	this.age = age;
+	this.mobile = mobile;
+	this.isAdult = function() {
+		return this.age > 18;
+	};
+	this.showInPage = function() {
+		console.log(this);
+		domName.innerText = this.name;
+		domAge.innerText = this.age;
+	};
+}
+/*__proto__
+prototype*/
 </script>
 </body>
 </html>

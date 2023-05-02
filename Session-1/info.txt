@@ -6,6 +6,8 @@ Data Types
 	object => array object function class class-object
 	null
 	undefined
+	NaN
+	function
 	
 Operator
 Arithmatic
