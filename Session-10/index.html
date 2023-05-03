@@ -1,0 +1,60 @@
+<form method="post" id="student-form">
+	<input type="text" name="name" placeholder="Sudent name">
+	<input type="number" name="age" placeholder="Sudent age">
+	<input type="number" name="mobile" placeholder="Sudent mobile">
+	<button type="submit">Add Student</button>
+</form>
+<div id="student-list"></div>
+<script>
+(function(){
+	document.querySelector('#student-form')
+	.addEventListener('submit', function(e) {
+		e.preventDefault();
+		const name = this.elements.name.value;
+		const age = Number(this.elements.age.value);
+		const mobile = Number(this.elements.mobile.value);
+		if (name) {
+			admissions.push(new Student(name, age, mobile));
+			admissions.showAll();
+			this.reset();
+		}
+	});
+	
+	function Student(name, age, mobile) {
+		this.name = name;
+		this.age = age;
+		this.mobile = mobile;
+	}
+	// prototype 
+	Student.prototype.isAdult = function() {
+		return this.age > 18;
+	};
+	Student.prototype.showInPage = function() {
+		const domName = document.querySelector('#name');
+		const domAge = document.querySelector('#age');
+		domName.innerText = this.name;
+		domAge.innerText = this.age;
+	};
+
+	const admissions = [];
+	window.admissions = admissions;
+	// proto
+	admissions.__proto__.searchName = function(name) {
+		return this.filter(e => e.name === name);
+	}
+	
+	admissions.__proto__.showAll = function(name) {
+		const list = document.querySelector('#student-list');
+		list.innerHTML = '';
+		return this.forEach(e => {
+			const student = document.createElement('div');
+			student.innerHTML = `
+			Name: ${e.name}<br>
+			Age: ${e.age}<br>
+			Mobile: ${e.mobile}<br><br>
+			`;
+			list.append(student);
+		});
+	}
+})();
+</script>
