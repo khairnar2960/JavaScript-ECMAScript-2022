@@ -1,0 +1,20 @@
+<script>
+// Calback function
+const num = [12, 13, 1, 5,100,90,50];
+function sort(arr, callback) {
+	return arr.sort(callback);
+}
+function customSort(a,b) {
+	return a-b;
+}
+console.log(sort(num, customSort));
+
+function sayHello(name, callback) {
+	if (callback) {
+		return callback(name);
+	}
+	name = `Hello ${name}`;
+	return name;
+}
+console.log(sayHello('Sameer'))
+</script>

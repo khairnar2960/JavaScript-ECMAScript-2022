@@ -1,0 +1,75 @@
+<html>
+	<body>
+		<div id="demo">
+		</div>
+	</body>
+</html>
+<script>
+/*
+student -> add // 10
+
+student -> fees // 5
+
+student -> message // 4-5s
+*/
+function getUsers() {
+	return new Promise(resolve => {
+		const xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function (res) {
+			if (this.readyState = 4 && this.status === 200) {
+				let data = [];
+				try {
+					data = JSON.parse(this.responseText);
+				} catch {}
+				data = JSON.parse(this.responseText)
+				resolve(data);
+			}
+		}
+		xhr.open('GET', '/mock-data.json');
+		xhr.send();
+	});
+}
+/*
+const users = getUsers();
+users.then(data => {
+	console.log(data[0]);
+});
+*/
+console.log('im after promise')
+// users.catch(e => console.log(e));
+
+async function first() {
+	return setTimeout(()=> {
+		console.log('hello i am first');
+	}, 3000);
+}
+async function second() {
+	setTimeout(()=> {
+		console.log('hello i am second');
+	}, 5000);
+}
+async function third() {
+	await first();
+	await second();
+	console.log('hello i am third');
+}
+// third();
+
+// fetch API
+// fetch('url', options = {})
+/*
+fetch('/mock-data.json')
+.then(data => data.json()) // convert to object from json string
+.then(data => {
+	console.log(data)
+})
+*/
+
+async function getUser(index) {
+	return await fetch('/mock-data.json')
+			.then(data => data.json())
+			.then(data => data[index]);
+}
+getUser(2)
+.then(user => console.log(user))
+</script>
